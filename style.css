@@ -1,10 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #f4f1ea;
+    background-color: #f4f2ed;
     color: #333;
     line-height: 1.7;
 }
+
+
+/* HEADER */
 
 header {
     background-color: #243b53;
@@ -19,61 +26,151 @@ header h1 {
 }
 
 header p {
-    margin-top: 8px;
+    margin: 8px 0 0;
+    opacity: 0.85;
 }
+
+
+/* MAIN PAGE */
 
 main {
-    max-width: 900px;
+    max-width: 950px;
     margin: auto;
-    padding: 40px 20px;
+    padding: 50px 20px;
 }
 
-h2 {
+
+/* MAJOR SECTIONS */
+
+.collection-section {
+    margin-bottom: 80px;
+}
+
+.collection-section > h2 {
     color: #243b53;
-    border-bottom: 2px solid #c49a5a;
-    padding-bottom: 8px;
+    font-size: 1.8rem;
+    border-bottom: 3px solid #b88a50;
+    padding-bottom: 12px;
+    margin-bottom: 35px;
 }
 
-.intro {
-    margin-bottom: 50px;
-}
 
-.collection-content {
+/* SOURCE CARDS */
+
+.source-card {
     background-color: white;
     padding: 30px;
-    border-left: 4px solid #c49a5a;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    margin-bottom: 35px;
+
+    border-radius: 8px;
+    border-left: 5px solid #b88a50;
+
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
 }
 
-.collection-content h3 {
+.source-card h3 {
     color: #243b53;
-    margin-top: 35px;
+    font-size: 1.4rem;
+    margin-top: 0;
+    margin-bottom: 22px;
 }
 
-.collection-content a {
+
+/* SOURCE INFORMATION */
+
+.source-details {
+    background-color: #f7f7f5;
+    padding: 16px 20px;
+    border-radius: 5px;
+    margin-bottom: 28px;
+}
+
+.source-details p {
+    margin: 8px 0;
+}
+
+
+/* ANNOTATIONS */
+
+.annotation h4 {
+    color: #9a642d;
+    font-size: 1rem;
+    margin-top: 28px;
+    margin-bottom: 5px;
+}
+
+.annotation p {
+    margin-top: 5px;
+}
+
+
+/* LINKS */
+
+a {
     color: #9a642d;
     font-weight: bold;
+    text-decoration: none;
 }
 
-.collection-content a:hover {
-    color: #243b53;
+a:hover {
+    text-decoration: underline;
 }
+
+
+/* FINAL SYNTHESIS */
+
+.conclusion {
+    background-color: #243b53;
+    color: white;
+
+    padding: 35px;
+    border-radius: 8px;
+
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.conclusion h2 {
+    margin-top: 0;
+    color: white;
+}
+
+.conclusion p {
+    color: #f3f3f3;
+}
+
+
+/* FOOTER */
 
 footer {
-    background-color: #243b53;
+    background-color: #1c3042;
     color: white;
     text-align: center;
     padding: 20px;
-    margin-top: 50px;
 }
+
+
+/* MOBILE */
 
 @media (max-width: 600px) {
 
     header h1 {
-        font-size: 1.9rem;
+        font-size: 1.8rem;
     }
 
-    .collection-content {
+    main {
+        padding: 30px 15px;
+    }
+
+    .source-card {
         padding: 20px;
+    }
+
+    .collection-section > h2 {
+        font-size: 1.5rem;
+    }
+
+    .conclusion {
+        padding: 25px;
     }
 }
