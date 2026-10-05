@@ -150,6 +150,26 @@ footer {
 }
 
 
+/* PROJECT 02 BUTTON */
+
+.project-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 18px;
+    background-color: #c49a5a;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.project-button:hover {
+    background-color: white;
+    color: #243b53;
+    text-decoration: none;
+}
+
+
 /* MOBILE */
 
 @media (max-width: 600px) {
@@ -173,4 +193,5 @@ footer {
     .conclusion {
         padding: 25px;
     }
+
 }
